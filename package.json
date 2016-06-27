@@ -1,0 +1,29 @@
+{
+  "name": "react-pokemon-training",
+  "version": "1.0.0",
+  "description": "PokemonAPI",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tescostum/react-pokemon-training.git"
+  },
+  "author": "tescostum",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tescostum/react-pokemon-training/issues"
+  },
+  "homepage": "https://github.com/Tescostum/react-pokemon-training#readme",
+  "devDependencies": {
+    "source-map-loader": "^0.1.5",
+    "ts-loader": "^0.8.2",
+    "typescript": "^1.8.10",
+    "typings": "^1.3.0"
+  },
+  "dependencies": {
+    "react": "^15.1.0",
+    "react-dom": "^15.1.0"
+  }
+}
