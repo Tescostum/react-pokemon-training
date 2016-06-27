@@ -1,2 +1,2 @@
 # react-pokemon-training
-PokemonAPI使ってReactの練習
+PokemonAPI使ってReactの練習+Typescript
