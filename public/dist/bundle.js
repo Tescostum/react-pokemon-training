@@ -46,10 +46,10 @@
 
 	"use strict";
 	/// <reference path="../typings/index.d.ts" />
-	var React = __webpack_require__(1);
-	var ReactDOM = __webpack_require__(38);
-	var Hello_1 = __webpack_require__(168);
-	var PokemonList_1 = __webpack_require__(169);
+	const React = __webpack_require__(1);
+	const ReactDOM = __webpack_require__(38);
+	const Hello_1 = __webpack_require__(168);
+	const PokemonList_1 = __webpack_require__(169);
 	ReactDOM.render(React.createElement(Hello_1.Hello, {compiler: "TypeScript", framework: "React"}), document.getElementById("example"));
 	ReactDOM.render(React.createElement(PokemonList_1.PokemonList, null), document.getElementById("pokemon"));
 
@@ -20352,23 +20352,13 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	var __extends = (this && this.__extends) || function (d, b) {
-	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
-	    function __() { this.constructor = d; }
-	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-	};
 	/// <reference path="../../typings/index.d.ts" />
-	var React = __webpack_require__(1);
-	var Hello = (function (_super) {
-	    __extends(Hello, _super);
-	    function Hello() {
-	        _super.apply(this, arguments);
-	    }
-	    Hello.prototype.render = function () {
+	const React = __webpack_require__(1);
+	class Hello extends React.Component {
+	    render() {
 	        return React.createElement("h1", null, "Hello from ", this.props.compiler, " and ", this.props.framework, "!");
-	    };
-	    return Hello;
-	}(React.Component));
+	    }
+	}
 	exports.Hello = Hello;
 
 
@@ -20377,24 +20367,24 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	var __extends = (this && this.__extends) || function (d, b) {
-	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
-	    function __() { this.constructor = d; }
-	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-	};
 	/// <reference path="../../typings/index.d.ts" />
-	var React = __webpack_require__(1);
-	var PokemonBox_1 = __webpack_require__(170);
-	var PokemonList = (function (_super) {
-	    __extends(PokemonList, _super);
-	    function PokemonList() {
-	        _super.apply(this, arguments);
+	const React = __webpack_require__(1);
+	const PokemonBox_1 = __webpack_require__(170);
+	class PokemonList extends React.Component {
+	    constructor() {
+	        super();
+	        this.state = { idList: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10] };
 	    }
-	    PokemonList.prototype.render = function () {
-	        return React.createElement("div", {class: "pokemonList"}, React.createElement(PokemonBox_1.PokemonBox, null));
-	    };
-	    return PokemonList;
-	}(React.Component));
+	    render() {
+	        if (!this.state) {
+	            return React.createElement("div", null, "準備中");
+	        }
+	        var node = this.state.idList.map(function (pokeId) {
+	            return React.createElement("li", {key: pokeId}, React.createElement(PokemonBox_1.PokemonBox, {pokemonId: pokeId}));
+	        });
+	        return React.createElement("ul", {class: "pokemonList"}, node);
+	    }
+	}
 	exports.PokemonList = PokemonList;
 
 
@@ -20403,23 +20393,13 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	var __extends = (this && this.__extends) || function (d, b) {
-	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
-	    function __() { this.constructor = d; }
-	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-	};
 	/// <reference path="../../typings/index.d.ts" />
-	var React = __webpack_require__(1);
-	var PokemonBox = (function (_super) {
-	    __extends(PokemonBox, _super);
-	    function PokemonBox() {
-	        _super.apply(this, arguments);
+	const React = __webpack_require__(1);
+	class PokemonBox extends React.Component {
+	    render() {
+	        return React.createElement("div", {class: "pokemonBox"}, this.props.pokemonId);
 	    }
-	    PokemonBox.prototype.render = function () {
-	        return React.createElement("div", {class: "pokemonBox"}, "ポケモンだよ");
-	    };
-	    return PokemonBox;
-	}(React.Component));
+	}
 	exports.PokemonBox = PokemonBox;
 
 
