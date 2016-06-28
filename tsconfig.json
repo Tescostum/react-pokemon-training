@@ -9,9 +9,9 @@
     },
     "files": [
         "./typings/index.d.ts",
-        "./public/ts/Hello.tsx",
-        "./public/ts/PokemonBox.tsx",
-        "./public/ts/PokemonList.tsx",
-        "./public/index.tsx"
+        "./ｓｒｃ/ts/Hello.tsx",
+        "./ｓｒｃ/ts/PokemonBox.tsx",
+        "./ｓｒｃ/ts/PokemonList.tsx",
+        "./ｓｒｃ/index.tsx"
     ]
 }
