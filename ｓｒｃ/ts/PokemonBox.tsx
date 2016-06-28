@@ -34,9 +34,9 @@ export class PokemonBox extends React.Component<PokemonBoxProps,PokemonBoxStates
         }
     }
     render() {
-        return <div class="pokemonBox">
-          <img class="pokemonImage" alt={this.state.pokemonName} src={this.state.image}/>
-          <p class="pokemonName">{this.state.pokemonName}</p>
+        return <div className="pokemonBox">
+          <img className="pokemonImage" alt={this.state.pokemonName} src={this.state.image}/>
+          <p className="pokemonName">{this.state.pokemonName}</p>
         </div>;
     }
 }

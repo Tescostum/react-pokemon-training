@@ -17,6 +17,6 @@ export class PokemonList extends React.Component<{}, PokemonListState> {
         var node = this.state.idList.map(function (pokeId) {
             return <li key={pokeId}><PokemonBox pokemonId={pokeId}></PokemonBox></li>
         });
-        return <ul class="pokemonList">{node}</ul>;
+        return <ul className="pokemonList">{node}</ul>;
     }
 }
