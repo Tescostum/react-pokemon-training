@@ -20382,7 +20382,7 @@
 	        var node = this.state.idList.map(function (pokeId) {
 	            return React.createElement("li", {key: pokeId}, React.createElement(PokemonBox_1.PokemonBox, {pokemonId: pokeId}));
 	        });
-	        return React.createElement("ul", {class: "pokemonList"}, node);
+	        return React.createElement("ul", {className: "pokemonList"}, node);
 	    }
 	}
 	exports.PokemonList = PokemonList;
@@ -20421,7 +20421,7 @@
 	        }
 	    }
 	    render() {
-	        return React.createElement("div", {class: "pokemonBox"}, React.createElement("img", {class: "pokemonImage", alt: this.state.pokemonName, src: this.state.image}), React.createElement("p", {class: "pokemonName"}, this.state.pokemonName));
+	        return React.createElement("div", {className: "pokemonBox"}, React.createElement("img", {className: "pokemonImage", alt: this.state.pokemonName, src: this.state.image}), React.createElement("p", {className: "pokemonName"}, this.state.pokemonName));
 	    }
 	}
 	exports.PokemonBox = PokemonBox;
