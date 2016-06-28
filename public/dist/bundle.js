@@ -20396,7 +20396,7 @@
 	/// <reference path="../../typings/index.d.ts" />
 	const React = __webpack_require__(1);
 	const request = __webpack_require__(171);
-	const pokemonAPI = "http://pokeapi.co/api/v2/pokemon-form/";
+	const pokemonAPI = "https://pokeapi.co/api/v2/pokemon-form/";
 	class PokemonBox extends React.Component {
 	    constructor(props) {
 	        super(props);

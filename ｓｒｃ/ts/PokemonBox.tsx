@@ -3,7 +3,7 @@ import * as React from "react"
 import * as ReactDOM from "react-dom"
 import * as request from "superagent"
 
-const pokemonAPI:string = "http://pokeapi.co/api/v2/pokemon-form/"
+const pokemonAPI:string = "https://pokeapi.co/api/v2/pokemon-form/"
 
 export interface PokemonBoxProps { pokemonId:number }
 export interface PokemonBoxStates { pokemonName:string, image:string }
