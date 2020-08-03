@@ -8,7 +8,7 @@ interface HelloProps {
 function Hello(props: HelloProps) {
     return (<div>
         <a href="https://github.com/Tescostum/react-pokemon-training">Github - react-pokemon-training</a>
-        <h1>Hello from {props.compiler} and {props.framework}.</h1>
+        <h1>Hello from {props.compiler} and {props.framework}!!</h1>
     </div>)
 }
 
