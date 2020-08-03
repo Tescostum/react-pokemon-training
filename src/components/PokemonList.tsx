@@ -1,6 +1,7 @@
 import * as React from "react"
 import * as ReactDOM from "react-dom";
-import {PokemonBox} from "./PokemonBox"
+import {PokemonBox} from "./PokemonBox";
+import "./PokemonList.css";
 
 export interface PokemonListState { idList:number[] }
 
