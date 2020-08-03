@@ -1,31 +1,39 @@
 {
   "name": "react-pokemon-training",
-  "version": "1.0.0",
-  "description": "PokemonAPI",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Tescostum/react-pokemon-training.git"
-  },
-  "author": "tescostum",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Tescostum/react-pokemon-training/issues"
-  },
-  "homepage": "https://github.com/Tescostum/react-pokemon-training#readme",
-  "devDependencies": {
-    "source-map-loader": "^0.1.5",
-    "ts-loader": "^0.8.2",
-    "typescript": "^1.8.10",
-    "typings": "^1.3.0",
-    "webpack": "^1.13.1"
-  },
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
-    "react": "^15.1.0",
-    "react-dom": "^15.1.0",
-    "superagent": ">=3.7.0"
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.5.0",
+    "@testing-library/user-event": "^7.2.1",
+    "@types/jest": "^24.9.1",
+    "@types/node": "^12.12.53",
+    "@types/react": "^16.9.44",
+    "@types/react-dom": "^16.9.8",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-scripts": "3.4.1",
+    "typescript": "^3.7.5"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
